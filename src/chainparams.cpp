@@ -114,8 +114,8 @@ class CMainParams : public CChainParams {
         nTargetTimespan = 1 * 120; // IDChain: 2 minutes
         nTargetSpacingSlowLaunch = 10 * 60;  // IDChain: 10 minutes (Slow launch - Block 2000)
         nTargetSpacing = 1 * 120; // IDChain: 2min after block 300
-        nLastPOWBlock = 100400;
-        nLastPOWBlockOld = 100400; // 1 November 2019
+        nLastPOWBlock = 61910;
+        nLastPOWBlockOld = 61910; // 1 November 2019
         nLastSeeSawBlock = 150400; // last block for seesaw rewards
         nRampToBlock = 2000; // Slow start, ramp linearly to this block
         nMaturity = 60; // 120 Minutes
@@ -176,10 +176,10 @@ class CMainParams : public CChainParams {
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = false;
+        fAllowMinDifficultyBlocks = true;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
-        fMineBlocksOnDemand = false;
+        fMineBlocksOnDemand = true;
         fSkipProofOfWorkCheck = false;
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
