@@ -2135,16 +2135,16 @@ int64_t GetBlockValue(int nHeight) {
         nSlowSubsidy *= nHeight;
     } else if (nHeight <= 86399 && nHeight >= Params().RAMP_TO_BLOCK()) {
         nSubsidy = 10 * COIN;
-    } else if (nHeight <= 172800 && nHeight >= 86400) { // Keep reward schedule.
+    } else if (nHeight <= 60099 && nHeight >= 55500) { // Keep reward schedule.
+        nSubsidy = 30 * COIN;
+    } else if (nHeight <= 69999 && nHeight > 61000) {
+        nSubsidy = 20 * COIN;
+    } else if (nHeight <= 345599 && nHeight >= 70000) {
         nSubsidy = 10 * COIN;
-    } else if (nHeight <= 259199 && nHeight > 172800) {
-        nSubsidy = 9.375 * COIN;
-    } else if (nHeight <= 345599 && nHeight >= 259200) {
-        nSubsidy = 9 * COIN;
 
         // POS Year 1
     } else if (nHeight <= 431999 && nHeight >= 345600) {
-        nSubsidy = 8.9 * COIN;
+        nSubsidy = 9 * COIN;
     } else if (nHeight <= 518399 && nHeight >= 432000) {
         nSubsidy = 8.5 * COIN;
     } else if (nHeight <= 604799 && nHeight >= 518400) {
