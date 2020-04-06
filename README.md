@@ -12,7 +12,6 @@ Features
 =============
 
 * Static PoS
-* Segwit
 
 
 The IDC-Core Project is a decentralized peer-to-peer banking financial platform, created under an open source license, featuring a built-in cryptocurrency, end-to-end encrypted messaging and decentralized marketplace. The decentralized network aims to provide anonymity and privacy for everyone through a simple user-friendly interface by taking care of all the advanced cryptography in the background.
@@ -27,7 +26,7 @@ The IDC-Core Project is a decentralized peer-to-peer banking financial platform,
 | Block Size | `1MB` |
 | Block Time | `120s` |
 | PoW Block Time | `120s`   |
-| PoW Reward | `10 IDC` |
+| PoW Reward | `dynamic, see chart in this README.md` |
 | PoS Reward | `10 IDC` |
 | Stake Time | `48 hours` |
 | Masternode Requirement | `20,000 IDC` |
@@ -36,9 +35,6 @@ The IDC-Core Project is a decentralized peer-to-peer banking financial platform,
 | RPC Port | `40896` |
 | Masternode Port | `31569` |
 | IDC legacy address start with | `D` |
-| Segwit | `yes` |
-| Segwit address ticker | `idc` |
-| Segwit activation | `January, 20 2020` |
 | Premine | `1 million IDC` |
 
 
@@ -68,11 +64,9 @@ POS Block rewards distribution
 
 ## Rewards changes
 
-Here is 2 charts which are show you rewards changes in IDC 2.0:
+Here is chart which is showing you rewards changes in IDC 3.0:
 
-![Block to size defenition](repos/block_reward_size_defenition.png)
-
-![Block to reward type defenition](repos/block_reward_type_defenition.png)
+![Block to size defenition](doc/image_sources/reward_chart.png)
 
 
 Instructions
